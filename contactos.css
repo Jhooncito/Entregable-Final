@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #13293d, #1e3d58);
+  color: #0c2c4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  text-align: center;
+}
+
+h1 {
+  color: #004b8d;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  color: #0b355a;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  width: 100%;
+  background: #004b8d;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #003366;
+}
+
+#form-message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.flecha-volver {
+  display: block;
+  font-size: 22px;
+  text-decoration: none;
+  color: #004b8d;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.captcha-container {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+#captcha-question {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social-icons img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}

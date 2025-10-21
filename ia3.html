@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asistentes Virtuales - Telekom Network Perú">
+  <meta name="keywords" content="asistentes virtuales, IA, chatbots, inteligencia artificial, atención al cliente, telecomunicaciones, Perú">
+  <title>Asistentes Virtuales | Telekom Network Perú</title>
+  <link rel="stylesheet" href="ia3.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- === CONTENIDO PRINCIPAL === -->
+  <main class="main-section">
+    <div class="image-container">
+      <img src="img/ia3.jpg" alt="Asistentes Virtuales">
+    </div>
+
+    <div class="content">
+      <h1>Asistentes Virtuales</h1>
+      <p>
+        Mejora la atención al cliente con chatbots inteligentes y asistentes capaces de entender el lenguaje natural.
+        Los asistentes virtuales utilizan inteligencia artificial y procesamiento de lenguaje natural para interactuar
+        de forma eficiente y personalizada con los usuarios.
+      </p>
+      <p>
+        En Telekom, implementamos asistentes virtuales para optimizar la comunicación con nuestros clientes,
+        reducir tiempos de respuesta y ofrecer soporte 24/7. Nuestros sistemas aprenden constantemente de las interacciones,
+        garantizando una experiencia cada vez más precisa y satisfactoria.
+      </p>
+    </div>
+  </main>
+
+  <!-- === SECCIÓN INFORMATIVA === -->
+  <section class="info-section">
+    <h2>Ventajas de los asistentes virtuales en telecomunicaciones</h2>
+    <p>
+      Los asistentes virtuales permiten automatizar procesos, mejorar la experiencia del cliente y
+      reducir la carga del personal de soporte. Algunas ventajas incluyen:
+    </p>
+    <ul>
+      <li>• Atención al cliente disponible 24/7.</li>
+      <li>• Respuestas rápidas y precisas a consultas frecuentes.</li>
+      <li>• Recopilación de datos y análisis de interacciones para mejorar servicios.</li>
+      <li>• Adaptación inteligente al comportamiento y preferencias del usuario.</li>
+    </ul>
+    <p>
+      Gracias a los asistentes virtuales, las empresas pueden brindar soporte eficiente,
+      aumentar la satisfacción del cliente y optimizar la gestión de recursos tecnológicos.
+    </p>
+  </section>
+
+  <!-- === FOOTER (IGUAL QUE EL INDEX) === -->
+  <footer>
+    <p>&copy; 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del caso práctico de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+  <script src="js/sesionActiva.js"></script>
+</body>
+</html>

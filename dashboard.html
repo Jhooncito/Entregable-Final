@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Usuario</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>👋 Bienvenido <span id="nombre-usuario"></span></h1>
+      <button id="logout">Cerrar sesión</button>
+    </header>
+
+    <section class="info">
+      <h2>Información del perfil</h2>
+      <div class="datos">
+        <p><strong>Usuario:</strong> <span id="usuario"></span></p>
+        <p><strong>Correo:</strong> <span id="email"></span></p>
+        <p><strong>País:</strong> <span id="pais"></span></p>
+        <p><strong>Fecha de nacimiento:</strong> <span id="fecha"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // ⚙️ Conexión Supabase
+    const SUPABASE_URL = "https://banmupakbakpjzcawjrc.supabase.co";
+    const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJhbm11cGFrYmFrcGp6Y2F3anJjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTQ3NzgsImV4cCI6MjA3NjM5MDc3OH0.66kLmy82jDq4RyQ1vckZEMpl2KZx1TUm6xNuHFm1Dy8";
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    // 🧠 Recuperar usuario de localStorage
+    const usuario = JSON.parse(localStorage.getItem("usuarioActual"));
+
+    if (!usuario) {
+      alert("⚠️ No has iniciado sesión.");
+      window.location.href = "login.html";
+    } else {
+      // Mostrar datos del usuario
+      document.getElementById("nombre-usuario").textContent = usuario.nombres || "Usuario";
+      document.getElementById("usuario").textContent = usuario.usuario || "—";
+      document.getElementById("email").textContent = usuario.email || "—";
+      document.getElementById("pais").textContent = usuario.pais || "—";
+      document.getElementById("fecha").textContent = usuario.fecha || "—";
+
+      // 🔹 Redirección automática al index después de 3 segundos
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 3000);
+    }
+
+    // 🔓 Cerrar sesión
+    document.getElementById("logout").addEventListener("click", () => {
+      localStorage.removeItem("usuarioActual");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>

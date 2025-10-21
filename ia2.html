@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Análisis predictivo - Telekom Network Perú">
+  <meta name="keywords" content="análisis predictivo, IA, big data, inteligencia artificial, predicción, telecomunicaciones, Perú">
+  <title>Análisis Predictivo | Telekom Network Perú</title>
+  <link rel="stylesheet" href="ia2.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- === CONTENIDO PRINCIPAL === -->
+  <main class="main-section">
+    <div class="image-container">
+      <img src="img/ia2.jpg" alt="Análisis Predictivo">
+    </div>
+
+    <div class="content">
+      <h1>Análisis Predictivo</h1>
+      <p>
+        Anticipa resultados y toma decisiones estratégicas basadas en datos con modelos de predicción avanzada.
+        El análisis predictivo combina técnicas estadísticas, inteligencia artificial y minería de datos
+        para identificar patrones y prever comportamientos futuros.
+      </p>
+      <p>
+        En Telekom, aplicamos análisis predictivo para optimizar el rendimiento de redes,
+        prever posibles fallas y mejorar la toma de decisiones. A través del aprendizaje automático,
+        nuestros sistemas pueden detectar anomalías antes de que ocurran, lo que garantiza
+        una mayor estabilidad y eficiencia operativa.
+      </p>
+    </div>
+  </main>
+
+  <!-- === SECCIÓN INFORMATIVA === -->
+  <section class="info-section">
+    <h2>Ventajas del análisis predictivo en telecomunicaciones</h2>
+    <p>
+      El uso de modelos predictivos permite transformar los datos en conocimiento útil,
+      impulsando la innovación y reduciendo costos operativos. Algunas ventajas incluyen:
+    </p>
+    <ul>
+      <li>• Identificación temprana de fallos en equipos o redes.</li>
+      <li>• Optimización de recursos mediante análisis de tendencias.</li>
+      <li>• Integración con IA para una toma de decisiones más inteligente.</li>
+      <li>• Mejora continua basada en datos históricos y en tiempo real.</li>
+    </ul>
+    <p>
+      Gracias al análisis predictivo, las organizaciones pueden adelantarse a los problemas,
+      reducir riesgos y maximizar el rendimiento de sus sistemas tecnológicos.
+    </p>
+  </section>
+
+  <!-- === FOOTER (IGUAL QUE EL INDEX) === -->
+  <footer>
+    <p>&copy; 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del caso práctico de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+  <script src="js/sesionActiva.js"></script>
+</body>
+</html>

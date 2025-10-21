@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seguridad impulsada por IA - Telekom Network Perú">
+  <meta name="keywords" content="seguridad, IA, inteligencia artificial, detección de amenazas, ciberseguridad, telecomunicaciones, Perú">
+  <title>Seguridad impulsada por IA | Telekom Network Perú</title>
+  
+  <link rel="stylesheet" href="ia4.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- === CONTENIDO PRINCIPAL === -->
+  <main class="main-section">
+    <div class="image-container">
+      <img src="img/ia4.jpg" alt="Seguridad IA">
+    </div>
+
+    <div class="content">
+      <h1>Seguridad impulsada por IA</h1>
+      <p>
+        Protege tu red con sistemas de detección de amenazas automáticos y aprendizaje continuo.
+        La inteligencia artificial permite identificar patrones sospechosos, prevenir ataques
+        y reaccionar en tiempo real ante vulnerabilidades.
+      </p>
+      <p>
+        En Telekom, implementamos soluciones de seguridad impulsadas por IA que fortalecen
+        la infraestructura tecnológica de nuestros clientes. Nuestros sistemas aprenden constantemente
+        de nuevos ataques y se adaptan para ofrecer una protección proactiva y eficiente.
+      </p>
+    </div>
+  </main>
+
+  <!-- === SECCIÓN INFORMATIVA === -->
+  <section class="info-section">
+    <h2>Ventajas de la seguridad impulsada por IA</h2>
+    <p>
+      La combinación de inteligencia artificial y aprendizaje automático en seguridad
+      permite reducir riesgos, detectar amenazas rápidamente y proteger los sistemas críticos.
+      Algunas ventajas incluyen:
+    </p>
+    <ul>
+      <li>• Detección automática de ataques y vulnerabilidades.</li>
+      <li>• Aprendizaje continuo para adaptarse a nuevas amenazas.</li>
+      <li>• Monitoreo y análisis en tiempo real de la red.</li>
+      <li>• Reducción de riesgos y optimización de recursos de seguridad.</li>
+    </ul>
+    <p>
+      Con la seguridad impulsada por IA, las empresas pueden anticiparse a los ataques,
+      proteger su infraestructura y garantizar la continuidad de sus operaciones.
+    </p>
+  </section>
+
+  <!-- === FOOTER (IGUAL QUE EL INDEX) === -->
+  <footer>
+    <p>&copy; 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del caso práctico de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+  <script src="js/sesionActiva.js"></script>
+</body>
+</html>

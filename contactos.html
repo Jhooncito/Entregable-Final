@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Formulario de contacto con captcha" />
+  <title>Contáctanos</title>
+  <link rel="stylesheet" href="contactos.css" />
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+
+<body>
+  <main>
+    <a href="index.html" class="flecha-volver" aria-label="Volver al inicio">←</a>
+    <h1>Contáctanos</h1>
+
+    <form id="contact-form" novalidate>
+      <label for="name">Tu nombre:</label>
+      <input id="name" name="name" type="text" placeholder="Escribe tu nombre" required />
+
+      <label for="email">Tu correo electrónico:</label>
+      <input id="email" name="email" type="email" placeholder="nombre@correo.com" required />
+
+      <label for="message">Tu mensaje:</label>
+      <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <!-- CAPTCHA -->
+      <div class="captcha-container">
+        <label id="captcha-question" for="captcha-answer"></label>
+        <input id="captcha-answer" name="captcha-answer" type="text" placeholder="Escribe el resultado aquí" required />
+      </div>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <p id="form-message"></p>
+
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+      </a>
+      <a href="https://x.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="Twitter" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/51999999999" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      </a>
+    </div>
+  </main>
+
+  <script src="js/contactanos.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Automatización inteligente - Telekom Network Perú">
+  <meta name="keywords" content="automatización, IA, inteligencia artificial, redes, eficiencia, telecom, Perú">
+  <title>Automatización Inteligente | Telekom Network Perú</title>
+  <link rel="stylesheet" href="ia1.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- === CONTENIDO PRINCIPAL === -->
+  <main class="main-section">
+    <div class="image-container">
+      <img src="img/ia1.jpg" alt="Automatización Inteligente">
+    </div>
+
+    <div class="content">
+      <h1>Automatización Inteligente</h1>
+      <p>
+        Optimizamos procesos empresariales con sistemas que aprenden y ejecutan tareas sin intervención manual.
+        La automatización inteligente combina inteligencia artificial (IA), aprendizaje automático y automatización
+        de procesos robóticos (RPA) para lograr operaciones más eficientes, rápidas y precisas.
+      </p>
+      <p>
+        En Telekom aplicamos la automatización inteligente para mejorar la eficiencia en las redes y
+        la administración de infraestructuras críticas. Estos sistemas son capaces de analizar datos en tiempo real,
+        detectar anomalías y responder automáticamente, reduciendo el margen de error humano y acelerando la resolución de incidentes.
+      </p>
+    </div>
+  </main>
+
+  <!-- === SECCIÓN INFORMATIVA === -->
+  <section class="info-section">
+    <h2>¿Por qué implementar automatización inteligente?</h2>
+    <p>
+      La automatización inteligente permite a las organizaciones reducir costos operativos y liberar al personal
+      para tareas de mayor valor. Además, ofrece ventajas como:
+    </p>
+    <ul>
+      <li>• Monitoreo continuo de procesos críticos.</li>
+      <li>• Reducción de tareas repetitivas y propensas a errores.</li>
+      <li>• Mejora en la toma de decisiones mediante análisis de datos en tiempo real.</li>
+      <li>• Integración con IA para aprendizaje y mejora continua.</li>
+    </ul>
+    <p>
+      Este enfoque transforma la manera en que operan las empresas tecnológicas modernas, ayudándolas
+      a mantenerse competitivas en un entorno digital en constante evolución.
+    </p>
+  </section>
+
+  <!-- === FOOTER (IGUAL QUE EL INDEX) === -->
+  <footer>
+    <p>&copy; 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del caso práctico de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+  <script src="js/sesionActiva.js"></script>
+</body>
+</html>
