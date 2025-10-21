@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Switches | Telecom Network Perú</title>
+  <link rel="stylesheet" href="switches.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+  
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero-switches">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <img src="img/switchimagen.png" alt="Switches profesionales">
+      </div>
+      <div class="hero-text">
+        <h1>Switches empresariales confiables y escalables</h1>
+        <p>Soluciones de switching y conectividad para cada capa de tu red.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === MAIN (tabs + panels) === -->
+  <main class="switch-main">
+    <aside class="switch-menu" role="tablist" aria-label="Categorías de switches">
+      <button class="tab active" data-target="panel-acceso" aria-selected="true">Acceso</button>
+      <button class="tab" data-target="panel-nucleo">Núcleo y Distribución</button>
+      <button class="tab" data-target="panel-datos">Centro de Datos y Nube</button>
+      <button class="tab" data-target="panel-industrial">Ethernet Industrial</button>
+      <button class="tab" data-target="panel-empresas">Empresas Pequeñas</button>
+    </aside>
+
+    <section class="switch-panels">
+      <!-- PANEL: ACCESO -->
+      <article id="panel-acceso" class="panel active" role="tabpanel">
+        <h2>Switches de Acceso</h2>
+        <p class="lead">Conectividad segura y rendimiento confiable para redes de campus y sucursales.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/sw1.png" alt="Catalyst 9400">
+            <h3>Catalyst Serie 9400</h3>
+            <p>Switch modular de clase empresarial para campus medianos y grandes.</p>
+            <button class="adquirir">Explorar serie 9400</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/sw2.jpg" alt="Catalyst 9300">
+            <h3>Catalyst Serie 9300</h3>
+            <p>Switch fijo apilable de clase empresarial para acceso con seguridad avanzada.</p>
+            <button class="adquirir">Explorar serie 9300</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/sw3.png" alt="Catalyst 9200">
+            <h3>Catalyst Serie 9200</h3>
+            <p>Switch fijo apilable ideal para pequeñas sucursales y campus medianos.</p>
+            <button class="adquirir">Explorar serie 9200</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: NÚCLEO Y DISTRIBUCIÓN -->
+      <article id="panel-nucleo" class="panel" role="tabpanel" hidden>
+        <h2>Switches de Núcleo y Distribución</h2>
+        <p class="lead">Diseñados para máxima disponibilidad y rendimiento en redes empresariales.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/sw4.png" alt="Catalyst 9600">
+            <h3>Catalyst Serie 9600</h3>
+            <p>Switch modular de alta capacidad para el núcleo de redes empresariales.</p>
+            <button class="adquirir">Explorar serie 9600</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: CENTRO DE DATOS -->
+      <article id="panel-datos" class="panel" role="tabpanel" hidden>
+        <h2>Switches para Centro de Datos y Nube</h2>
+        <p class="lead">Rendimiento y automatización para entornos de nube híbrida y data center.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/sw5.png" alt="Nexus 9000">
+            <h3>Nexus Serie 9000</h3>
+            <p>Switch para centros de datos modernos con soporte para automatización y SDN.</p>
+            <button class="adquirir">Explorar Nexus 9000</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: INDUSTRIAL -->
+      <article id="panel-industrial" class="panel" role="tabpanel" hidden>
+        <h2>Switches Ethernet Industriales</h2>
+        <p class="lead">Rendimiento resistente para entornos industriales y exteriores.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/sw6.png" alt="IE3300">
+            <h3>Catalyst IE3300</h3>
+            <p>Switch industrial con montaje en riel DIN y protección IP30.</p>
+            <button class="adquirir">Explorar IE3300</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: EMPRESAS PEQUEÑAS -->
+      <article id="panel-empresas" class="panel" role="tabpanel" hidden>
+        <h2>Switches para Empresas Pequeñas y LAN Compactas</h2>
+        <p class="lead">Diseñados para negocios que buscan rendimiento profesional con inversión accesible.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/sw7.png" alt="Meraki MS390">
+            <h3>Meraki Serie MS390</h3>
+            <p>Administración en la nube simplificada con seguridad y escalabilidad.</p>
+            <button class="adquirir">Explorar MS390</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- === SOPORTE === -->
+  <section class="support">
+    <div class="support-inner">
+      <div class="support-item">
+        <h3>Encuentre su switch ideal</h3>
+        <p>Compare modelos Catalyst y Meraki, según sus necesidades de red y presupuesto.</p>
+        <a class="link-cta" href="contacto.html">Solicite asesoría</a>
+      </div>
+      <div class="support-item">
+        <h3>Servicios de soporte</h3>
+        <p>Implementación, configuración y mantenimiento con expertos certificados.</p>
+        <a class="link-cta" href="index.html">Conozca nuestros servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del caso práctico de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+  <script src="js/sesionActiva.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- JS propio -->
+  <script src="js/saltado.js"></script>
+</body>
+</html>
