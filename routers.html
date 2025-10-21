@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Routers | Telecom Network Perú</title>
+  <!-- estilos específicos para esta página -->
+  <link rel="stylesheet" href="routers.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- === HERO (imagen profesional de routers) === -->
+  <section class="hero-routers">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <img src="img/router.jpg" alt="Routers profesionales">
+      </div>
+      <div class="hero-text">
+        <h1>Routers preparados para el futuro para cada red</h1>
+        <p>Soluciones de routing avanzadas: seguridad, rendimiento y gestión que escalan con tu negocio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === MAIN: menú lateral tipo 'tabs' + panels (sin navegar fuera) === -->
+  <main class="router-main">
+    <aside class="router-menu" role="tablist" aria-label="Tipos de implementación">
+      <button class="tab active" data-target="panel-sucursal" aria-selected="true">Sucursal</button>
+      <button class="tab" data-target="panel-hibrido">Trabajo híbrido</button>
+      <button class="tab" data-target="panel-industrial">Industrial</button>
+      <button class="tab" data-target="panel-proveedores">Proveedores de servicios</button>
+      <button class="tab" data-target="panel-pequenas">Pequeñas empresas</button>
+      <button class="tab" data-target="panel-virtual">Virtual</button>
+    </aside>
+
+    <section class="router-panels">
+      <!-- PANEL: SUCURSAL -->
+      <article id="panel-sucursal" class="panel active" role="tabpanel">
+        <h2>Routers para Sucursales</h2>
+        <p class="lead">Conectividad segura y fiable entre oficinas y sedes remotas. Ideal para empresas que necesitan extender su red corporativa con desempeño y seguridad.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/r1.png" alt="Router sucursal 1">
+            <h3>Catalyst IR1100 (Resistente)</h3>
+            <p>Router compacto y resistente, compatible con SD-WAN y pósibilidades modulares para sucursales.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/r2.png" alt="Router sucursal 2">
+            <h3>ISR Series (Versátil)</h3>
+            <p>Rendimiento equilibrado para VPN, seguridad y gestión centralizada.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/r3.png" alt="Router sucursal 3">
+            <h3>Edge Router Secure</h3>
+            <p>Optimizado para acceso de sucursales con cifrado y QoS.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: HÍBRIDO -->
+      <article id="panel-hibrido" class="panel" role="tabpanel" hidden>
+        <h2>Routers para Trabajo Híbrido</h2>
+        <p class="lead">Conectividad segura y óptima para usuarios remotos y oficinas, con políticas de acceso y calidad de servicio para entornos híbridos.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/r4.png" alt="Router hibrido 1">
+            <h3>SD-WAN Edge</h3>
+            <p>Optimización del tráfico y resiliencia para acceso remoto y teletrabajo.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/r5.png" alt="Router hibrido 2">
+            <h3>Access Edge Pro</h3>
+            <p>Rendimiento para videoconferencia y aplicaciones colaborativas.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: INDUSTRIAL -->
+      <article id="panel-industrial" class="panel" role="tabpanel" hidden>
+        <h2>Routers Industriales</h2>
+        <p class="lead">Equipos IP67 / resistentes para entornos industriales — conectividad incluso en condiciones adversas.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/r6.png" alt="Router industrial 1">
+            <h3>IR8100</h3>
+            <p>Router modular con certificación industrial y SD-WAN.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/r7.png" alt="Router industrial 2">
+            <h3>IR8300</h3>
+            <p>Alta disponibilidad y resistencia para entornos críticos.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: PROVEEDORES -->
+      <article id="panel-proveedores" class="panel" role="tabpanel" hidden>
+        <h2>Routers para Proveedores de servicios</h2>
+        <p class="lead">Plataformas escalables para operadores y carriers con alto rendimiento y garantías de uptime.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/r8.png" alt="Router provider 1">
+            <h3>Service Provider Core</h3>
+            <p>Enrutamiento de alto rendimiento para agregación de tráfico a nivel operador.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/r9.png" alt="Router provider 2">
+            <h3>Edge Carrier Router</h3>
+            <p>Capacidad para múltiples enlaces y funcionalidades de carrier-grade.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: PEQUEÑAS EMPRESAS -->
+      <article id="panel-pequenas" class="panel" role="tabpanel" hidden>
+        <h2>Routers para Pequeñas Empresas</h2>
+        <p class="lead">Soluciones económicas y seguras que dan a las PYMES nivel profesional en conectividad y seguridad.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/r10.png" alt="Router small 1">
+            <h3>SMB Router Lite</h3>
+            <p>Instalación simple y administración en la nube.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: VIRTUAL -->
+      <article id="panel-virtual" class="panel" role="tabpanel" hidden>
+        <h2>Routers Virtuales</h2>
+        <p class="lead">Instancias virtuales para nubes públicas/privadas, con despliegue ágil y escalabilidad por demanda.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/r4.png" alt="Router virtual">
+            <h3>vRouter Cloud</h3>
+            <p>Instancia virtual para enlaces en la nube y orquestación centralizada.</p>
+            <button class="adquirir">Adquirir</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- === SECCIÓN FINAL: servicios / soporte adaptados a Telecom Network Perú === -->
+  <section class="support">
+    <div class="support-inner">
+      <div class="support-item">
+        <h3>El respaldo que le permite comenzar</h3>
+        <p>Aproveche al máximo su inversión en redes con los servicios profesionales de <strong>Telecom Network Perú</strong>: consultoría, implementación y soporte especializado.</p>
+        <a class="link-cta" href="Chat.html">Contacte a un experto</a>
+      </div>
+
+      <div class="support-item">
+        <h3>Servicios empresariales críticos</h3>
+        <p>Modernice su infraestructura, acelere la digitalización y reduzca tiempos de implementación con nuestros servicios basados en experiencia y datos.</p>
+        <a class="link-cta" href="servicio(1).html">Conozca nuestros servicios</a>
+      </div>
+
+      <div class="support-item">
+        <h3>Encuentre su router</h3>
+        <p>Compare modelos y características para elegir el equipo ideal para su red. Nuestro equipo le asesora en la selección y adquisición.</p>
+        <a class="link-cta" href="Chat.html">Solicite asesoría</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+
+  
+<script src="js/sesionActiva.js"></script>
+  <!-- jQuery (desde CDN) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- Tu archivo JavaScript -->
+<script src="js/saltado.js"></script>
+
+</body>
+</html>

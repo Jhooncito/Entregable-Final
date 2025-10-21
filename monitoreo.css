@@ -1,0 +1,272 @@
+/* === Estilos específicos para seguridad-red.html === */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 70px;
+  height: auto;
+}
+
+.logo-section span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0a1f5b;
+}
+
+/* NAVEGACIÓN */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700; /* 🔹 Antes estaba 500, ahora es negrita */
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+
+nav a:hover,
+nav a:focus {
+  color: #0073e6;
+}
+
+/* BOTONES AUTH */
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  background-color: #004a80;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-buttons a:hover,
+.auth-buttons a:focus {
+  background-color: #00365e;
+  transform: scale(1.03);
+}
+
+/* 🔹 USUARIO ACTIVO */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.user-info span {
+  font-weight: 600;
+  color: #0a1f5b;
+  font-size: 15px;
+}
+
+.user-info button {
+  background-color: #e60000;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-info button:hover {
+  background-color: #b30000;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+.main-section {
+  display: flex;
+  align-items: flex-start; /* 🔹 antes estaba center */
+  justify-content: space-between;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+  background: #fff;
+  gap: 40px;
+}
+
+
+.main-content {
+  flex: 1 1 50%;
+  max-width: 550px;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  color: #0a1f5b;
+  margin-bottom: 20px;
+}
+
+.main-content h1 span {
+  color: #004a80;
+}
+
+.main-content p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #004a80;;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+.main-image {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: flex-start; /* 🔹 alinea arriba con el texto */
+  justify-content: center; /* 🔹 centra horizontalmente */
+}
+
+.main-image img {
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 0; /* 🔹 elimina espacio innecesario */
+}
+
+
+
+/* === SECCIONES === */
+.section {
+  padding: 20px 10%;
+  background-color: #f9f9f9;
+}
+
+.section h2 {
+  color: #0a1f5b;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* === MONITOREO Y SOPORTE === */
+.monitoreo, .soporte-flex {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.col, .soporte-texto {
+  flex: 1 1 45%;
+}
+
+.soporte-img img {
+  max-width: 60%;
+  border-radius: 10px;
+}
+.soporte-img {
+  text-align: center;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 900px) {
+  .main-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .main-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .monitoreo, .soporte-flex {
+    flex-direction: column;
+  }
+
+  .menu ul {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}

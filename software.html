@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Software de Redes | Telecom Network Perú</title>
+  <!-- Estilos específicos -->
+  <link rel="stylesheet" href="software.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero-software">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <img src="img/soft.1.jpg" alt="Software de redes">
+      </div>
+      <div class="hero-text">
+        <h1>Software de redes inteligente y centralizado</h1>
+        <p>Gestione, automatice y supervise toda su infraestructura con soluciones avanzadas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === MAIN === -->
+  <main class="software-main">
+    <aside class="software-menu" role="tablist" aria-label="Categorías de software de red">
+      <button class="tab active" data-target="panel-gestion" aria-selected="true">Gestión de Red</button>
+      <button class="tab" data-target="panel-automatizacion">Automatización</button>
+      <button class="tab" data-target="panel-seguridad">Visibilidad y Seguridad</button>
+      <button class="tab" data-target="panel-analitica">Analítica y Monitoreo</button>
+    </aside>
+
+    <section class="software-panels">
+      <!-- PANEL: GESTIÓN DE RED -->
+      <article id="panel-gestion" class="panel active" role="tabpanel">
+        <h2>Gestión de Red</h2>
+        <p class="lead">Controle y administre su infraestructura de red desde una única interfaz centralizada.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/acc.4.JPG" alt="Cisco DNA Center">
+            <h3>Cisco DNA Center</h3>
+            <p>Automatización, análisis y gestión integral de redes empresariales desde una consola unificada.</p>
+            <button class="adquirir">Explorar DNA Center</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/soft.2.png" alt="Meraki Dashboard">
+            <h3>Meraki Dashboard</h3>
+            <p>Plataforma de administración en la nube para redes seguras, escalables y fáciles de mantener.</p>
+            <button class="adquirir">Explorar Meraki Dashboard</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: AUTOMATIZACIÓN -->
+      <article id="panel-automatizacion" class="panel" role="tabpanel" hidden>
+        <h2>Automatización</h2>
+        <p class="lead">Reduzca tareas repetitivas y acelere la implementación con flujos automatizados.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/soft.3.jpg" alt="Cisco Catalyst Center">
+            <h3>Cisco Catalyst Center</h3>
+            <p>Automatización basada en políticas para redes cableadas e inalámbricas.</p>
+            <button class="adquirir">Explorar Catalyst Center</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: VISIBILIDAD Y SEGURIDAD -->
+      <article id="panel-seguridad" class="panel" role="tabpanel" hidden>
+        <h2>Visibilidad y Seguridad</h2>
+        <p class="lead">Detecte amenazas, controle el acceso y garantice el cumplimiento con herramientas inteligentes.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/soft.4.png" alt="Cisco ISE">
+            <h3>Cisco ISE</h3>
+            <p>Control de acceso seguro y segmentación dinámica de usuarios y dispositivos.</p>
+            <button class="adquirir">Explorar Cisco ISE</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: ANALÍTICA Y MONITOREO -->
+      <article id="panel-analitica" class="panel" role="tabpanel" hidden>
+        <h2>Analítica y Monitoreo</h2>
+        <p class="lead">Monitoree el rendimiento de la red y obtenga información predictiva con IA.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/soft.5.png" alt="ThousandEyes">
+            <h3>ThousandEyes</h3>
+            <p>Monitoreo extremo a extremo de la red, aplicaciones y experiencia del usuario.</p>
+            <button class="adquirir">Explorar ThousandEyes</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- === SOPORTE === -->
+  <section class="support">
+    <div class="support-inner">
+      <div class="support-item">
+        <h3>Encuentre su software ideal</h3>
+        <p>Compare opciones según las necesidades de automatización, seguridad y visibilidad de su red.</p>
+        <a class="link-cta" href="Chat.html">Solicite asesoría</a>
+      </div>
+      <div class="support-item">
+        <h3>Servicios de soporte</h3>
+        <p>Implementación, configuración y mantenimiento con expertos certificados.</p>
+        <a class="link-cta" href="index.html">Conozca nuestros servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+  <script src="js/sesionActiva.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- JS propio -->
+  <script src="js/saltado.js"></script>
+</body>
+</html>

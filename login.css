@@ -1,0 +1,120 @@
+/* === login.css === */
+
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #005c99, #0a2a43);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+main {
+  background: #ffffff;
+  color: #333;
+  padding: 45px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  width: clamp(320px, 85%, 400px);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título */
+h1 {
+  color: #004a80;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Etiquetas */
+label {
+  text-align: left;
+  font-weight: 600;
+  color: #005c99;
+  font-size: 15px;
+}
+
+/* Campos de entrada */
+input {
+  padding: 11px;
+  border: 1px solid #b3d9f2;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f8fbff;
+}
+
+input:focus {
+  border-color: #007bbf;
+  box-shadow: 0 0 8px rgba(0, 123, 191, 0.4);
+  background-color: #ffffff;
+}
+
+/* Botón */
+button {
+  background: linear-gradient(135deg, #007bbf, #004a80);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #004a80, #002e4d);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 74, 128, 0.4);
+}
+
+/* Mensaje de validación */
+#mensaje {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Enlace de registro o volver */
+.volver {
+  display: inline-block;
+  margin-top: 12px;
+  color: #004a80;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.volver:hover {
+  color: #007bbf;
+  text-decoration: underline;
+}
+#captcha-question {
+  font-weight: bold !important;
+  margin-bottom: 5px  !important;
+  display: block  !important;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Telecom Network Perú: Soluciones avanzadas en Networking Enterprise, colaboración y seguridad con IA.">
+  <title>Telecom Network Perú</title>
+  <link rel="stylesheet" href="sedelima.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+  <!-- ===== MAIN ===== -->
+  <main class="main-sede">
+    <div class="info-sede">
+      <h1>Lima</h1>
+      <p><strong>Dirección:</strong><br>
+        Av. Abancay 260-262, Cercado de Lima, <br>
+        Lima 150011</p>
+      <p><strong>Teléfono:</strong> +51 610-5050 / +51 987-654-321</p>
+    </div>
+
+    <div class="mapa-sede">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.1234567890123!2d-77.033333!3d-12.046373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8a9b1b0c7a9%3A0xabcdef123456789!2sAv+Abancay+260-262%2C+Lima+15001%2C+Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1700000000001!5m2!1ses-419!2spe"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+  
+
+<script src="js/sesionActiva.js"></script>
+</body>
+</html>

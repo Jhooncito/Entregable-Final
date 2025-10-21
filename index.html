@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Telecom Network Perú: Soluciones avanzadas en Networking Enterprise, colaboración y seguridad con IA.">
+  <title>Telecom Network Perú</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleSesion.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+<!-- 🔐 Botones de sesión -->
+<div class="auth-buttons" id="auth-buttons">
+  <a href="login.html" class="btn-login">Iniciar sesión</a>
+  <a href="registro.html" class="btn-register">Registrarse</a>
+</div>
+
+<!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+<div class="user-info" id="user-info" style="display:none;">
+  <span>👋 Bienvenido, <strong id="nombre-usuario"></strong></span>
+  <button id="logout" class="logout-btn">Cerrar sesión</button>
+</div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+<!-- HERO -->
+<section class="hero">
+  <img src="img/HERO-1_GettyImages-1329183101.jpg" alt="Networking empresarial" class="hero-bg">
+  <div class="hero-content">
+    <h1>TELECOM NETWORK PERÚ</h1>
+    <p>Moderniza tu red WAN con seguridad avanzada, automatización con IA, criptografía post-cuántica y gestión en la nube simplificada.</p>
+    <div class="hero-buttons">
+      <a href="servicio(1).html" class="hero-btn hero-btn-light">Explora nuevas series</a>
+      <a href="routers.html" class="hero-btn hero-btn-light">Prueba el selector de routers</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h2>SERVICIOS DE NETWORKING ENTERPRISE</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="img/redes.jpg" alt="Diseño e instalación de redes" loading="lazy">
+        <h3>Diseño e instalación de redes</h3>
+        <p>Creamos infraestructuras de red seguras, rápidas y adaptadas a las necesidades de cada empresa.</p>
+        <button type="button"><a href="servicio(1).html">Explorar soluciones de red</a></button>
+      </article>
+
+      <article class="card">
+        <img src="img/monitoreo.jpg" alt="Administración y monitoreo" loading="lazy">
+        <h3>Administración y monitoreo</h3>
+        <p>Supervisamos el tráfico y rendimiento de tu red las 24 horas para garantizar estabilidad y eficiencia.</p>
+        <button><a href="monitoreo.html">Ver opciones de monitoreo</a></button>
+      </article>
+
+      <article class="card">
+        <img src="img/nube.jpg" alt="Soluciones en la nube" loading="lazy">
+        <h3>Soluciones en la nube y conectividad remota</h3>
+        <p>Optimiza tus operaciones con servicios en la nube, acceso remoto seguro y conexiones VPN empresariales.</p>
+        <button><a href="nube.html">Descubre la nube empresarial</a></button>
+      </article>
+
+      <article class="card">
+        <img src="img/seguridad datos.jpg" alt="Seguridad y protección de datos" loading="lazy">
+        <h3>Seguridad y protección de datos</h3>
+        <p>Protege tu infraestructura frente a amenazas cibernéticas mediante firewalls, sistemas IDS/IPS y análisis preventivo.</p>
+        <button><a href="seguridad.html">Protégete con nosotros</a></button>
+      </article>
+    </div>
+  </section>
+
+  <!-- IA -->
+  <section>
+    <h2>SOLUCIONES DE INTELIGENCIA ARTIFICIAL</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="img/automatizacion.jpg" alt="Automatización inteligente" loading="lazy">
+        <h3>Automatización inteligente</h3>
+        <p>Optimizamos procesos empresariales con sistemas que aprenden y ejecutan tareas sin intervención manual.</p>
+        <button><a href="ia1.html">Descubrir automatización IA</a></button>
+        
+      </article>
+
+      <article class="card">
+        <img src="img/predictivo.jpg" alt="Análisis predictivo" loading="lazy">
+        <h3>Análisis predictivo</h3>
+        <p>Anticipa resultados y toma decisiones estratégicas basadas en datos con modelos de predicción avanzada.</p>
+        <button><a href="ia2.html">Explorar análisis predictivo</a></button>
+      </article>
+
+      <article class="card">
+        <img src="img/asistente.virtual.jpg" alt="Asistentes virtuales" loading="lazy">
+        <h3>Asistentes virtuales</h3>
+        <p>Mejora la atención al cliente con chatbots inteligentes y asistentes capaces de entender el lenguaje natural.</p>
+        <button><a href="ia3.html">Probar asistente virtual</a></button>
+      </article>
+
+      <article class="card">
+        <img src="img/seguridad.ia.jpg" alt="Seguridad impulsada por IA" loading="lazy">
+        <h3>Seguridad impulsada por IA</h3>
+        <p>Protege tu red con sistemas de detección de amenazas automáticos y aprendizaje continuo.</p>
+        <button><a href="ia4.html">Conoce la seguridad inteligente</a></button>
+      </article>
+    </div>
+  </section>
+
+  <!-- SEDES -->
+  <section class="sedes">
+    <h2>NUESTRAS SEDES</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="img/sede-peru.jpg" alt="Sede Lima" loading="lazy">
+        <h3>Sede Lima</h3>
+        <p>Centro principal de operaciones con soporte 24/7 y laboratorios de redes avanzadas.</p>
+        <button><a href="sedelima.html">Ver ubicación</a></button>
+      </article>
+
+      <article class="card">
+        <img src="img/sede-arequipa.jpg" alt="Sede Arequipa" loading="lazy">
+        <h3>Sede Arequipa</h3>
+        <p>Especializada en soluciones de conectividad y mantenimiento de redes empresariales.</p>
+        <button><a href="sedearequipa.html">Explorar sede</a></button>
+      </article>
+
+      <article class="card">
+        <img src="img/SENATI-Trujillo.jpg" alt="Sede Trujillo" loading="lazy">
+        <h3>Sede Trujillo</h3>
+        <p>Centro regional con servicios de soporte técnico, capacitación y monitoreo remoto.</p>
+        <button><a href="sedetrujillo.html">Conocer más</a></button>
+      </article>
+    </div>
+  </section>
+
+  <!-- VIDEO DE LA EMPRESA -->
+  <section>
+    <h2>CONOCE NUESTROS SERVICIOS</h2>
+    <div class="videito">
+      <iframe src="img/Telecom video final.mp4" title="Video de Telecom Network Perú" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- TECNOLOGÍAS QUE UTILIZAMOS -->
+  <section>
+    <h2>TECNOLOGÍAS QUE UTILIZAMOS</h2>
+    <div class="tecnologia1">
+      <div class="tecnologia2">
+        <a href="https://www.cisco.com/" target="_blank">
+        <img src="https://www.2n.com/-/media/Images/Partners/Integrators/Cisco-Webex-Calling.png" alt="Cisco Networking">
+        </a>
+      </div>
+  
+      <div class="tecnologia2">
+        <a href="https://www.redhat.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/de/thumb/0/04/Red_Hat_2019_logo.svg/2560px-Red_Hat_2019_logo.svg.png" alt="Red Hat Enterprise Linux">
+        </a>
+      </div>
+  
+      <div class="tecnologia2">
+        <a href="https://www.vmware.com/" target="_blank">
+        <img src="https://i0.wp.com/unaaldia.hispasec.com/wp-content/uploads/2016/06/f3cc2-vmware-logo.jpg?ssl=1" alt="VMware">
+        </a>
+      </div>
+  
+      <div class="tecnologia2">
+        <a href="https://www.fortinet.com/" target="_blank">
+        <img src="https://www.rockwellautomation.com/bin/partner-logo?partnerId=275c0dc66e6aed119562000d3a4f7b88" alt="Fortinet Security">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Botón flotante -->
+  <button class="floating-btn" id="floatingBtn">
+    <!-- Puedes cambiar esta imagen por la que desees -->
+    <img src="https://cdn-icons-png.flaticon.com/512/134/134914.png" alt="Chat">
+  </button>
+
+  <!-- Contenedor del iframe-->
+  <div class="iframe-container" id="iframeContainer">
+    <div class="iframe-header">
+      
+      <button class="close-btn" id="closeBtn">&times;</button>
+    </div>
+     <!--Cambia el src por la URL de tu HTML -->
+    <iframe src="Chat.html" title="Ventana de soporte"></iframe>
+  </div>
+
+<script src="js/app.js"></script>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Columna 1 -->
+    <div class="footer-column">
+      <h4>¿Qué podemos hacer por ti?</h4>
+      <ul>
+        <li><a href="servicio(1).html">Soluciones de Networking</a></li>
+        <li><a href="Chat.html">Consultorías Tecnológicas</a></li>
+        <li><a href="Chat.html">Soporte Técnico 24/7</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="footer-column">
+      <h4>Telecom Network Perú</h4>
+      <ul>
+        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="https://github.com/">Nuestros Proyectos</a></li>
+        <li><a href="https://www.blogger.com/">Blog de Tecnología</a></li>
+        <li><a href="contactos.html">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3 -->
+    <div class="footer-column">
+      <h4>¿Trabajamos juntos?</h4>
+      <p>¡Escríbenos!</p>
+      <p><a href="https://login.microsoftonline.com/">senati@telecomnetwork.com</a></p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/"><img src="img/x.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com"><img src="img/link.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/"><img src="img/inst.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <!-- Columna 4 -->
+    <div class="footer-column">
+      <h4>¿Qué es Telecom Network Perú?</h4>
+      <p>
+        Telekom es una de las grandes empresas especializadas en soluciones de redes,
+        telecomunicaciones y soporte tecnológico para empresas. Conectamos
+        negocios con innovación y rendimiento de alto nivel.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <span>© 2025 Telecom Network Perú — Todos los derechos reservados</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/sesionActiva.js"></script>
+  <script src="js/app.js"></script>
+  
+   <!--Estoy al borde del colapso-->
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce más sobre Telecom Network Perú, nuestra historia, visión y equipo de trabajo.">
+  <title>Nosotros | Telecom Network Perú</title>
+  <link rel="stylesheet" href="nosotros.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section class="about-section">
+      <div class="about-text">
+        <h1>Quiénes Somos</h1>
+        <p>
+        En Telecom Network Perú, nacimos con la misión de conectar al país a través de soluciones tecnológicas seguras, inteligentes y confiables. 
+          Desde nuestros inicios en 2010, hemos desarrollado proyectos de infraestructura de red, automatización con IA y ciberseguridad empresarial.  
+          Nuestro compromiso es ofrecer innovación, soporte constante y calidad en cada servicio.  
+          Creemos que la conectividad impulsa el progreso, y trabajamos cada día para hacerlo posible.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="img/campus.jpg" alt="Equipo Telecom Network Perú">
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="equipo">
+      <h2>Nuestro Equipo</h2>
+      <div class="team-grid">
+        <article class="member-card">
+          <img src="img/persona1.jpg" alt="Integrante 1">
+          <p>Especialista en Redes y Telecomunicaciones</p>
+        </article>
+
+        <article class="member-card">
+          <img src="img/persona2.jpg" alt="Integrante 2">
+          <p>Administrador de Servidores Linux</p>
+        </article>
+
+        <article class="member-card">
+          <img src="img/persona3.jpg" alt="Integrante 3">
+          <p>Analista de Seguridad Informática</p>
+        </article>
+
+        <article class="member-card">
+          <img src="img/persona4.jpg" alt="Integrante 4">
+          <p>Desarrollador Web y CLoud</p>
+        </article>
+
+        <article class="member-card">
+          <img src="img/persona5.jpg" alt="Integrante 5">
+          <p>Ingeniero de Soporte Técnico</p>
+        </article>
+
+        <article class="member-card">
+          <img src="img/persona6.jpg" alt="Integrante 6">
+          <p>Gestor de Ptoyectos Tecnológicos</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+   <!-- 🔧 SCRIPT para mantener sesión -->
+  <script>
+    // 🧠 Verificar si hay sesión activa
+    const usuario = JSON.parse(localStorage.getItem("usuarioActual"));
+    const authButtons = document.getElementById("auth-buttons");
+    const userInfo = document.getElementById("user-info");
+
+    if (usuario) {
+      // Mostrar el nombre del usuario
+      document.getElementById("nombre-usuario").textContent = usuario.nombres;
+
+      // Ocultar botones de login/registro y mostrar los de sesión activa
+      authButtons.style.display = "none";
+      userInfo.style.display = "flex";
+    }
+
+    // 🔓 Cerrar sesión
+    const logoutBtn = document.getElementById("logout");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("usuarioActual");
+        window.location.reload(); // recarga la página sin sesión
+      });
+    }
+  </script>
+</body>
+</html>

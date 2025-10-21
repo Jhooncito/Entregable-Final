@@ -1,0 +1,217 @@
+/* RESET Y BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0a1f5b;
+}
+
+/* NAV */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0073e6;
+}
+
+/* BOTONES AUTH */
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  background-color: #004a80;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-buttons a:hover,
+.auth-buttons a:focus {
+  background-color: #00365e;
+  transform: scale(1.03);
+}
+
+/* 🔹 USUARIO ACTIVO */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.user-info span {
+  font-weight: 600;
+  color: #0a1f5b;
+  font-size: 15px;
+}
+
+.user-info button {
+  background-color: #e60000;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-info button:hover {
+  background-color: #b30000;
+}
+
+/* SECCIÓN QUIÉNES SOMOS */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 60px 10%;
+  background-color: #ffffff;
+}
+
+.about-text {
+  flex: 1 1 450px;
+  text-align: justify; /* Alineado tipo Word */
+}
+
+.about-text h1 {
+  color: #004a80; /* Azul oscuro copito */
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #00365e; /* Azul oscuro más suave */
+  line-height: 1.8;
+  font-weight: normal; /* Sin negrita */
+}
+
+.about-image img {
+  width: 700px; /* Imagen más grande */
+  max-width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* EQUIPO */
+.equipo {
+  text-align: center;
+  padding: 50px 10%;
+  background-color: #f4f8fc;
+}
+
+.equipo h2 {
+  color: #004a80;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+/* 🔹 Ajustado para que los 6 miembros quepan sin scroll */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* 🔹 permite que se ajusten si la pantalla es pequeña */
+}
+
+.member-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 180px; /* 🔹 antes era 220px, se redujo para que quepan 6 */
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.member-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  color: #004a80;
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 5px 0;
+}

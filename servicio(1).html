@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diseño e instalación de redes | Telecom Network Perú</title>
+  <link rel="stylesheet" href="servicio(1).css" />
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="img/servicio.jpg" alt="Networking empresarial" class="hero-bg">
+    <div class="hero-content">
+      <h1>DISEÑO E INSTALACIÓN DE REDES</h1>
+      <p>Creamos infraestructuras de red seguras, rápidas y adaptadas a las necesidades de cada empresa.</p>
+    </div>
+  </section>
+
+
+  <!-- SOLUCIONES DE RED -->
+  <section class="soluciones">
+    <h2>Soluciones de Red Empresarial</h2>
+    <div class="cards">
+
+      <a href="redes de acceso.html" class="card">
+        <img src="https://cdn.pixabay.com/photo/2015/08/31/14/48/network-915569_1280.jpg" alt="Redes de acceso">
+        <h3>Redes de acceso</h3>
+      </a>
+
+      <a href="nube.html" class="card">
+        <img src="https://media.istockphoto.com/id/1350722246/photo/server-room-background.jpg?s=2048x2048&w=is&k=20&c=fVzk6hc-Q7y72ixrkq4YGBYzj2uu-mhGsPqCR9DjofA=" alt="Redes de nube y centros de datos">
+        <h3>Redes de nube y centros de datos</h3>
+      </a>
+
+      <a href="software.html" class="card">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=60" alt="Software de redes">
+        <h3>Software de redes</h3>
+      </a>
+
+      <a href="routers.html" class="card">
+        <img src="https://t3.ftcdn.net/jpg/06/21/88/02/360_F_621880271_zmlvSi5uQWWN4hlYi9pz02w3uPJQXRdo.jpg" alt="Routers">
+        <h3>Routers</h3>
+      </a>
+
+      <a href="switches.html" class="card">
+        <img src="https://www.tecnozero.com/wp-content/uploads/2012/02/armario-rack.jpg" alt="Switches">
+        <h3>Switches</h3>
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+ 
+ <script src="js/sesionActiva.js"></script>
+</body>
+</html>

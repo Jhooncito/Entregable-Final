@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+  <main>
+    <h1>INICIAR SESIÓN</h1>
+
+    <form id="login-form">
+      <label for="usuario">Nombre de usuario</label>
+      <input type="text" id="usuario" placeholder="Ejemplo: joorgito" required>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+
+   
+    
+
+    <!-- Captcha simple -->
+    <div>
+      <label id="captcha-question" for="captcha-answer"></label>
+      <input type="text" id="captcha-answer" placeholder="Respuesta" required />
+    </div>
+
+    <button type="submit">Ingresar</button>
+  </form>
+
+  <p id="mensaje"></p>
+  </main>
+
+
+  <script src="js/loginCapcha.js"></script>
+</body>
+</html>

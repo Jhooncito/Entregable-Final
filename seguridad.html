@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seguridad de Red | Telecom Network Perú</title>
+  <link rel="stylesheet" href="seguridad.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+
+<body>
+
+  <!-- CABECERA -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- === HERO === -->
+  <section class="hero-seguridad">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <img src="img/pri4.jpg" alt="Seguridad de red avanzada">
+      </div>
+      <div class="hero-text">
+        <h1>Seguridad de Red</h1>
+        <p>Proteja cada capa de su infraestructura con visibilidad, control y prevención inteligente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === MAIN === -->
+  <main class="seguridad-main">
+    <aside class="seguridad-menu" role="tablist" aria-label="Categorías de seguridad">
+      <button class="tab active" data-target="panel-firewalls" aria-selected="true">Firewalls de Nueva Generación</button>
+      <button class="tab" data-target="panel-zero">Zero Trust</button>
+      <button class="tab" data-target="panel-seg-endpoint">Seguridad de Endpoints</button>
+      <button class="tab" data-target="panel-seg-red">Visibilidad y Control de Red</button>
+    </aside>
+
+    <section class="seguridad-panels">
+
+      <!-- PANEL: FIREWALLS -->
+      <article id="panel-firewalls" class="panel active" role="tabpanel">
+        <h2>Firewalls de Nueva Generación</h2>
+        <p class="lead">Protección avanzada con inspección profunda, segmentación dinámica y gestión centralizada.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/p1.jpg" alt="Firepower">
+            <h3>FortiGate Next-Generation Firewall</h3>
+            <p>Firewall de nueva generación con detección de amenazas en tiempo real.</p>
+            <button class="adquirir">Explorar Firewallr</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: ZERO TRUST -->
+      <article id="panel-zero" class="panel" role="tabpanel" hidden>
+        <h2>Palo Alto Networks Zero Trust Network Access (ZTNA)</h2>
+        <p class="lead">Una arquitectura centrada en la identidad y el contexto, sin confianza implícita.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/p2.png" alt="Palo Alto Networks">
+            <h3>Palo Alto Networks</h3>
+            <p>Modelo de seguridad basado en confianza cero para redes híbridas y usuarios remotos.</p>
+            <button class="adquirir">Explorar Palo Alto Networks</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: ENDPOINT -->
+      <article id="panel-seg-endpoint" class="panel" role="tabpanel" hidden>
+        <h2>Seguridad de Endpoints</h2>
+        <p class="lead">Detección y respuesta ante amenazas avanzadas en dispositivos corporativos.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/p3.png" alt="Sophos Intercept">
+            <h3>Sophos Intercept X Endpoint Protection</h3>
+            <p>Prevención y remediación automatizada frente a ataques de malware y ransomware.</p>
+            <button class="adquirir">Explorar Sophos Intercept</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: VISIBILIDAD Y CONTROL -->
+      <article id="panel-seg-red" class="panel" role="tabpanel" hidden>
+        <h2>Visibilidad y Control de Red</h2>
+        <p class="lead">Obtenga control completo de dispositivos, tráfico y políticas de acceso.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/p4.png" alt="Okta Identity">
+            <h3>Okta Identity Cloud (IAM / Access Management)</h3>
+            <p>Control de acceso basado en identidad con visibilidad total de usuarios y dispositivos.</p>
+            <button class="adquirir">Explorar Okta Identity Cloud</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- === SOPORTE === -->
+  <section class="support">
+    <div class="support-inner">
+      <div class="support-item">
+        <h3>Solicite asesoría personalizada</h3>
+        <p>Diseñe una arquitectura segura adaptada a su negocio.</p>
+        <a class="link-cta" href="Chat.html">Solicite asesoría</a>
+      </div>
+      <div class="support-item">
+        <h3>Conozca nuestros servicios</h3>
+        <p>Monitoreo, auditoría y soporte técnico 24/7.</p>
+        <a class="link-cta" href="servicio(1).html">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- FOOTER -->
+   <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+
+
+<script src="js/sesionActiva.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js/saltado.js"></script>
+</body>
+</html>

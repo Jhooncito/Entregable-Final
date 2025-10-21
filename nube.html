@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redes de Nube y Centros de Datos | Telecom Network Perú</title>
+  <link rel="stylesheet" href="nube.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+
+<body>
+
+  <!-- === CABECERA === -->
+  <!-- ===== HEADER (igual al index) ===== -->
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero-nube">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <img src="img/nub1.jpg" alt="Infraestructura de Nube y Data Center">
+      </div>
+      <div class="hero-text">
+        <h1>Redes de Nube y Centros de Datos</h1>
+        <p>Rendimiento, virtualización y automatización para entornos de nube híbrida y data center.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === MAIN === -->
+  <main class="nube-main">
+    <aside class="nube-menu" role="tablist" aria-label="Categorías de redes de nube">
+      <button class="tab active" data-target="panel-data" aria-selected="true">Centro de Datos</button>
+      <button class="tab" data-target="panel-hibrida">Nube Híbrida</button>
+      <button class="tab" data-target="panel-virtual">Virtualización</button>
+      <button class="tab" data-target="panel-seguridad">Seguridad y Automatización</button>
+    </aside>
+
+    <section class="nube-panels">
+      <!-- PANEL: CENTRO DE DATOS -->
+      <article id="panel-data" class="panel active" role="tabpanel">
+        <h2>Centro de Datos</h2>
+        <p class="lead">Infraestructura de red confiable, escalable y optimizada para cargas críticas.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/nub2.png" alt="Cisco Nexus 9000">
+            <h3>Cisco Nexus Serie 9000</h3>
+            <p>Switch para data centers modernos, con soporte para SDN y automatización completa.</p>
+            <button class="adquirir">Explorar Nexus 9000</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: NUBE HÍBRIDA -->
+      <article id="panel-hibrida" class="panel" role="tabpanel" hidden>
+        <h2>Juniper Cloud Networking (Apstra)</h2>
+        <p class="lead">Conecte y gestione cargas en entornos locales y en la nube con flexibilidad total.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/nub3.png" alt="Juniper Cloud Networking (Apstra)">
+            <h3>Juniper Cloud Networking (Apstra)</h3>
+            <p>Solución para interconexión segura entre centros de datos y nubes públicas, con gestión centralizada.</p>
+            <button class="adquirir">Explorar Juniper Cloud Networking</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: VIRTUALIZACIÓN -->
+      <article id="panel-virtual" class="panel" role="tabpanel" hidden>
+        <h2>Virtualización</h2>
+        <p class="lead">Redes virtualizadas para eficiencia, segmentación y automatización avanzada.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/nub4.png" alt="Cisco ACI">
+            <h3>VMware NSX Data Center</h3>
+            <p>Plataforma de red definida por software que simplifica la operación, segmentación y automatización del data center.</p>
+            <button class="adquirir">Explorar VMware NSX Data Center</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL: SEGURIDAD Y AUTOMATIZACIÓN -->
+      <article id="panel-seguridad" class="panel" role="tabpanel" hidden>
+        <h2>Seguridad y Automatización</h2>
+        <p class="lead">Protección integral, visibilidad y control inteligente en toda la infraestructura.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/nub5.png" alt="Cisco Secure Workload">
+            <h3>Palo Alto Prisma Cloud</h3>
+            <p>Solución de seguridad integral basada en políticas y automatización para entornos híbridos y multinube.</p>
+            <button class="adquirir">Explorar Palo Alto Prisma Cloud</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- === SOPORTE === -->
+  <section class="support">
+    <div class="support-inner">
+      <div class="support-item">
+        <h3>Encuentre su solución ideal</h3>
+        <p>Compare arquitecturas de red según su carga de trabajo y entorno.</p>
+        <a class="link-cta" href="contacto.html">Solicite asesoría</a>
+      </div>
+      <div class="support-item">
+        <h3>Servicios de soporte</h3>
+        <p>Implementación, configuración y mantenimiento con expertos certificados.</p>
+        <a class="link-cta" href="index.html">Conozca nuestros servicios</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- FOOTER -->
+   <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+      <!-- 🔧 SCRIPT para mantener sesión -->
+  <script>
+    // 🧠 Verificar si hay sesión activa
+    const usuario = JSON.parse(localStorage.getItem("usuarioActual"));
+    const authButtons = document.getElementById("auth-buttons");
+    const userInfo = document.getElementById("user-info");
+
+    if (usuario) {
+      // Mostrar el nombre del usuario
+      document.getElementById("nombre-usuario").textContent = usuario.nombres;
+
+      // Ocultar botones de login/registro y mostrar los de sesión activa
+      authButtons.style.display = "none";
+      userInfo.style.display = "flex";
+    }
+
+    // 🔓 Cerrar sesión
+    const logoutBtn = document.getElementById("logout");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("usuarioActual");
+        window.location.reload(); // recarga la página sin sesión
+      });
+    }
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- JS específico -->
+  <script src="js/saltado.js"></script>
+
+</body>
+</html>

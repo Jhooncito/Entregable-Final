@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redes de Acceso | Telecom Network Perú</title>
+  <link rel="stylesheet" href="redes de acceso.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero-acceso">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <img src="img/acceso.png" alt="Redes de acceso empresariales">
+      </div>
+      <div class="hero-text">
+        <h1>Redes de acceso seguras e inteligentes</h1>
+        <p>Conectividad Wi-Fi y cableada de alto rendimiento para usuarios y dispositivos empresariales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === MAIN === -->
+  <main class="acceso-main">
+    <aside class="acceso-menu" role="tablist">
+      <button class="tab active" data-target="panel-wifi" aria-selected="true">Wi-Fi Empresarial</button>
+      <button class="tab" data-target="panel-lan">Controladores LAN</button>
+      <button class="tab" data-target="panel-seguridad">Seguridad de Acceso</button>
+      <button class="tab" data-target="panel-gestion">Gestión y Monitoreo</button>
+    </aside>
+
+    <section class="acceso-panels">
+      <!-- PANEL 1 -->
+      <article id="panel-wifi" class="panel active" role="tabpanel">
+        <h2>Puntos de Acceso Wi-Fi 6 / 6E</h2>
+        <p class="lead">Velocidades más altas, menor latencia y mayor cobertura con gestión centralizada.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/acc.1.png" alt="Wi-Fi 6E empresarial">
+            <h3>Catalyst Serie 9100</h3>
+            <p>Punto de acceso Wi-Fi 6E con analítica avanzada y seguridad de nivel empresarial.</p>
+            <button class="adquirir">Explorar serie 9100</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL 2 -->
+      <article id="panel-lan" class="panel" role="tabpanel" hidden>
+        <h2>Controladores LAN Inalámbricos</h2>
+        <p class="lead">Administre cientos de puntos de acceso con políticas unificadas y automatización.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/acc.2.png" alt="Controlador LAN inalámbrico">
+            <h3>Catalyst Serie 9800</h3>
+            <p>Controlador inalámbrico con gestión en la nube, seguridad y resiliencia integrada.</p>
+            <button class="adquirir">Explorar serie 9800</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL 3 -->
+      <article id="panel-seguridad" class="panel" role="tabpanel" hidden>
+        <h2>Seguridad en el Acceso</h2>
+        <p class="lead">Controle y autentique usuarios y dispositivos con políticas adaptativas.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/acc.3.png" alt="Cisco ISE">
+            <h3>Identity Services Engine (ISE)</h3>
+            <p>Plataforma de control de acceso a la red con segmentación dinámica y visibilidad total.</p>
+            <button class="adquirir">Explorar ISE</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL 4 -->
+      <article id="panel-gestion" class="panel" role="tabpanel" hidden>
+        <h2>Gestión y Monitoreo</h2>
+        <p class="lead">Automatice la administración y optimización de su red desde una interfaz unificada.</p>
+
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="img/acc.4.JPG" alt="Cisco DNA Center">
+            <h3>DNA Center</h3>
+            <p>Gestión centralizada con IA y analítica para redes cableadas e inalámbricas.</p>
+            <button class="adquirir">Explorar DNA Center</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- === SOPORTE === -->
+  <section class="support">
+    <div class="support-inner">
+      <div class="support-item">
+        <h3>Optimice su red de acceso</h3>
+        <p>Modernice su infraestructura Wi-Fi y cableada con soluciones escalables.</p>
+        <a class="link-cta" href="Chat.html">Solicite asesoría</a>
+      </div>
+      <div class="support-item">
+        <h3>Servicios de soporte</h3>
+        <p>Implementación, configuración y mantenimiento con expertos certificados.</p>
+        <a class="link-cta" href="index.html">Conozca nuestros servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+
+      <!-- 🔧 SCRIPT para mantener sesión -->
+  <script>
+    // 🧠 Verificar si hay sesión activa
+    const usuario = JSON.parse(localStorage.getItem("usuarioActual"));
+    const authButtons = document.getElementById("auth-buttons");
+    const userInfo = document.getElementById("user-info");
+
+    if (usuario) {
+      // Mostrar el nombre del usuario
+      document.getElementById("nombre-usuario").textContent = usuario.nombres;
+
+      // Ocultar botones de login/registro y mostrar los de sesión activa
+      authButtons.style.display = "none";
+      userInfo.style.display = "flex";
+    }
+
+    // 🔓 Cerrar sesión
+    const logoutBtn = document.getElementById("logout");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("usuarioActual");
+        window.location.reload(); // recarga la página sin sesión
+      });
+    }
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js/saltado.js"></script>
+</body>
+</html>

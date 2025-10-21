@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoreo de Redes - Telecom Network Perú</title>
+  <link rel="stylesheet" href="monitoreo.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0U84LliYbUDdCTmyIlyPJDbVwYVaLwi9rA&s" alt="Logo Telecom Network Perú" width="70" height="70">
+        <span>Telecom Network Perú</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Chat.html">Soporte</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contactos.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- 🔐 Botones de sesión -->
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="registro.html" class="btn-register">Registrarse</a>
+      </div>
+
+      <!-- 👤 Información del usuario (visible solo si hay sesión activa) -->
+      <div class="user-info" id="user-info" style="display:none;">
+        <span>👋 Hola, <strong id="nombre-usuario"></strong></span>
+        <button id="logout">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- ===== MAIN ===== -->
+  <main class="main-section">
+    <div class="main-content">
+      <h1>Monitoreo Profesional de Redes <span>LAN / WAN</span></h1>
+      <p>
+        En Telecom Network Perú asumimos la administración total de redes LAN y WAN de nuestros clientes,
+        con controles remotos o presenciales a nivel SNMP, utilizando herramientas modernas de monitoreo
+        y gestión de fallas.
+      </p>
+      <a href="Chat.html" class="btn">Consultar Servicio</a>
+    </div>
+    <div class="main-image">
+      <img src="https://www.ufinet.com/wp-content/uploads/2025/07/shutterstock_2136788117.jpg" alt="Administrador de redes">
+    </div>
+  </main>
+
+  <!-- ===== MONITOREO ===== -->
+  <section class="section" id="servicio">
+    <div class="monitoreo">
+      <div class="col">
+        <h2>Monitoreo de RED LAN / WAN</h2>
+        <ul>
+          <li>Controles presenciales o remotos a Nivel SNMP.</li>
+          <li>Identificación dinámica de fallas en equipos LAN.</li>
+          <li>Gestión de logs y fallas de red.</li>
+          <li>Instalación y monitoreo de software de gestión.</li>
+          <li>Reportes garantizados según contrato.</li>
+          <li>Control de configuraciones y escenarios.</li>
+          <li>Segmentación lógica y accesos remotos.</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h2>Monitoreo de la WAN</h2>
+        <ul>
+          <li>Control de interfaces WAN.</li>
+          <li>Gestión de reglas en Firewalls.</li>
+          <li>Configuración de VPNs y enlaces dedicados.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOPORTE ===== -->
+  <section class="section soporte">
+    <h2>Soporte de Comunicaciones On Site</h2>
+    <p>
+      Extensión del servicio de monitoreo para resolver incidentes que requieren atención presencial
+      o mantenimiento especializado.
+    </p>
+    <div class="soporte-flex">
+      <div class="soporte-img">
+        <img src="https://services.wortev.com/wp-content/uploads/2025/07/Soporte-tecnico-para-empresas.webp" alt="Soporte técnico">
+      </div>
+      <div class="soporte-texto">
+        <ul>
+          <li>Mantenimiento preventivo y correctivo.</li>
+          <li>Diagnóstico técnico de dispositivos.</li>
+          <li>Registro de marca, modelo y número de serie.</li>
+          <li>Seguimiento y actualización de incidentes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUMINISTRO ===== -->
+  <section class="section">
+    <h2>Suministro de Equipamiento de Redes</h2>
+    <p>
+      Asociaciones estratégicas nos permiten proveer equipos de Networking de primera línea,
+      con garantía extendida y configuración personalizada.
+    </p>
+    <ul>
+      <li>Instalación básica presencial.</li>
+      <li>Configuración según requerimientos.</li>
+      <li>Servicio post-venta con repuesto express.</li>
+    </ul>
+  </section>
+
+   <!-- FOOTER -->
+   <footer>
+    <p>© 2025 Telecom Network Perú. Todos los derechos reservados.</p>
+    <p>Desarrollado como parte del Entregable de Fundamentos de Desarrollo Web.</p>
+  </footer>
+    <!-- 🔧 SCRIPT para mantener sesión -->
+  <script>
+    // 🧠 Verificar si hay sesión activa
+    const usuario = JSON.parse(localStorage.getItem("usuarioActual"));
+    const authButtons = document.getElementById("auth-buttons");
+    const userInfo = document.getElementById("user-info");
+
+    if (usuario) {
+      // Mostrar el nombre del usuario
+      document.getElementById("nombre-usuario").textContent = usuario.nombres;
+
+      // Ocultar botones de login/registro y mostrar los de sesión activa
+      authButtons.style.display = "none";
+      userInfo.style.display = "flex";
+    }
+
+    // 🔓 Cerrar sesión
+    const logoutBtn = document.getElementById("logout");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("usuarioActual");
+        window.location.reload(); // recarga la página sin sesión
+      });
+    }
+  </script>
+
+</body>
+</html>
